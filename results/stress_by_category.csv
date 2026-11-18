@@ -1,0 +1,19 @@
+window,category,spread_ratio,vol_ratio,excess
+COVID 2020,Bonds,3.471,5.125,0.922
+COVID 2020,Commodities,1.541,1.649,0.9355
+COVID 2020,International,2.873,3.595,0.8347
+COVID 2020,Large-cap US,5.662,4.455,1.288
+COVID 2020,Niche (thin),3.649,3.16,1.265
+COVID 2020,Sector,3.832,4.346,0.9032
+Rates 2022,Bonds,2.296,1.867,1.172
+Rates 2022,Commodities,1.375,1.029,1.307
+Rates 2022,International,1.455,1.376,1.095
+Rates 2022,Large-cap US,2.056,1.715,1.204
+Rates 2022,Niche (thin),1.766,1.616,1.053
+Rates 2022,Sector,1.381,1.588,0.8622
+Tariffs 2025,Bonds,2.358,2.006,1.032
+Tariffs 2025,Commodities,1.326,1.316,0.9929
+Tariffs 2025,International,2.201,2.054,1.038
+Tariffs 2025,Large-cap US,3.634,3.088,1.178
+Tariffs 2025,Niche (thin),3.465,2.625,1.173
+Tariffs 2025,Sector,2.721,2.274,1.126

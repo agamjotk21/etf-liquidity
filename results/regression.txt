@@ -1,0 +1,150 @@
+===== main  (standard errors clustered by ETF) =====
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:             log_spread   R-squared:                       0.717
+Model:                            OLS   Adj. R-squared:                  0.717
+Method:                 Least Squares   F-statistic:                     57.62
+Date:                Wed, 18 Nov 2026   Prob (F-statistic):           2.40e-15
+Time:                        18:24:52   Log-Likelihood:                -2520.3
+No. Observations:                3604   AIC:                             5053.
+Df Residuals:                    3598   BIC:                             5090.
+Df Model:                           5                                         
+Covariance Type:              cluster                                         
+=================================================================================================
+                                    coef    std err          z      P>|z|      [0.025      0.975]
+-------------------------------------------------------------------------------------------------
+Intercept                         0.8340      0.450      1.852      0.064      -0.049       1.717
+C(asset_class)[T.US equity]       1.0229      0.167      6.127      0.000       0.696       1.350
+C(asset_class)[T.Intl equity]     0.7025      0.176      4.003      0.000       0.359       1.046
+C(asset_class)[T.Commodities]     0.6400      0.232      2.757      0.006       0.185       1.095
+log_dv                            0.0466      0.019      2.508      0.012       0.010       0.083
+vol                               3.4471      0.315     10.938      0.000       2.829       4.065
+==============================================================================
+Omnibus:                      493.982   Durbin-Watson:                   0.976
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             1120.003
+Skew:                          -0.803   Prob(JB):                    6.23e-244
+Kurtosis:                       5.209   Cond. No.                         198.
+==============================================================================
+
+Notes:
+[1] Standard Errors are robust to cluster correlation (CRV1)
+
+===== volume_only  (standard errors clustered by ETF) =====
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:             log_spread   R-squared:                       0.476
+Model:                            OLS   Adj. R-squared:                  0.475
+Method:                 Least Squares   F-statistic:                     13.83
+Date:                Wed, 18 Nov 2026   Prob (F-statistic):           9.98e-07
+Time:                        18:24:52   Log-Likelihood:                -3630.1
+No. Observations:                3604   AIC:                             7270.
+Df Residuals:                    3599   BIC:                             7301.
+Df Model:                           4                                         
+Covariance Type:              cluster                                         
+=================================================================================================
+                                    coef    std err          z      P>|z|      [0.025      0.975]
+-------------------------------------------------------------------------------------------------
+Intercept                         0.6102      0.836      0.730      0.466      -1.029       2.249
+C(asset_class)[T.US equity]       1.4664      0.202      7.254      0.000       1.070       1.863
+C(asset_class)[T.Intl equity]     1.2394      0.228      5.440      0.000       0.793       1.686
+C(asset_class)[T.Commodities]     1.4237      0.376      3.789      0.000       0.687       2.160
+log_dv                            0.0684      0.039      1.759      0.079      -0.008       0.145
+==============================================================================
+Omnibus:                       40.932   Durbin-Watson:                   0.621
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               67.324
+Skew:                          -0.059   Prob(JB):                     2.40e-15
+Kurtosis:                       3.659   Cond. No.                         196.
+==============================================================================
+
+Notes:
+[1] Standard Errors are robust to cluster correlation (CRV1)
+
+===== vol_only_loglog  (standard errors clustered by ETF) =====
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:             log_spread   R-squared:                       0.813
+Model:                            OLS   Adj. R-squared:                  0.813
+Method:                 Least Squares   F-statistic:                     2055.
+Date:                Wed, 18 Nov 2026   Prob (F-statistic):           2.64e-31
+Time:                        18:24:52   Log-Likelihood:                -1773.3
+No. Observations:                3604   AIC:                             3551.
+Df Residuals:                    3602   BIC:                             3563.
+Df Model:                           1                                         
+Covariance Type:              cluster                                         
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept      4.9720      0.061     82.092      0.000       4.853       5.091
+log_vol        0.9515      0.021     45.337      0.000       0.910       0.993
+==============================================================================
+Omnibus:                      210.271   Durbin-Watson:                   1.420
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              323.495
+Skew:                          -0.488   Prob(JB):                     5.68e-71
+Kurtosis:                       4.095   Cond. No.                         6.73
+==============================================================================
+
+Notes:
+[1] Standard Errors are robust to cluster correlation (CRV1)
+
+===== loglog_full  (standard errors clustered by ETF) =====
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:             log_spread   R-squared:                       0.848
+Model:                            OLS   Adj. R-squared:                  0.848
+Method:                 Least Squares   F-statistic:                     783.5
+Date:                Wed, 18 Nov 2026   Prob (F-statistic):           2.86e-33
+Time:                        18:24:52   Log-Likelihood:                -1401.7
+No. Observations:                3604   AIC:                             2815.
+Df Residuals:                    3598   BIC:                             2853.
+Df Model:                           5                                         
+Covariance Type:              cluster                                         
+=================================================================================================
+                                    coef    std err          z      P>|z|      [0.025      0.975]
+-------------------------------------------------------------------------------------------------
+Intercept                         4.2845      0.176     24.329      0.000       3.939       4.630
+C(asset_class)[T.US equity]       0.3064      0.058      5.324      0.000       0.194       0.419
+C(asset_class)[T.Intl equity]    -0.0626      0.065     -0.959      0.337      -0.191       0.065
+C(asset_class)[T.Commodities]     0.0105      0.099      0.106      0.915      -0.184       0.205
+log_dv                            0.0237      0.009      2.730      0.006       0.007       0.041
+log_vol                           0.9059      0.029     31.125      0.000       0.849       0.963
+==============================================================================
+Omnibus:                      233.305   Durbin-Watson:                   1.717
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              387.297
+Skew:                          -0.504   Prob(JB):                     7.94e-85
+Kurtosis:                       4.250   Cond. No.                         249.
+==============================================================================
+
+Notes:
+[1] Standard Errors are robust to cluster correlation (CRV1)
+
+===== etf_cross_section  (standard errors HC1 robust) =====
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:             log_spread   R-squared:                       0.893
+Model:                            OLS   Adj. R-squared:                  0.874
+Method:                 Least Squares   F-statistic:                     28.28
+Date:                Wed, 18 Nov 2026   Prob (F-statistic):           3.95e-10
+Time:                        18:24:52   Log-Likelihood:                -1.9320
+No. Observations:                  34   AIC:                             15.86
+Df Residuals:                      28   BIC:                             25.02
+Df Model:                           5                                         
+Covariance Type:                  HC1                                         
+=================================================================================================
+                                    coef    std err          z      P>|z|      [0.025      0.975]
+-------------------------------------------------------------------------------------------------
+Intercept                         0.7908      0.371      2.134      0.033       0.064       1.517
+C(asset_class)[T.US equity]       0.8619      0.175      4.914      0.000       0.518       1.206
+C(asset_class)[T.Intl equity]     0.4818      0.188      2.558      0.011       0.113       0.851
+C(asset_class)[T.Commodities]     0.3327      0.190      1.750      0.080      -0.040       0.705
+log_dv                            0.0427      0.013      3.180      0.001       0.016       0.069
+vol                               5.5746      0.938      5.945      0.000       3.737       7.412
+==============================================================================
+Omnibus:                       29.196   Durbin-Watson:                   2.440
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               71.933
+Skew:                          -1.912   Prob(JB):                     2.40e-16
+Kurtosis:                       9.013   Cond. No.                         312.
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity robust (HC1)
+
